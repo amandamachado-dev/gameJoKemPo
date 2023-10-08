@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(http://source.unsplash.com/1700x960/?landscape);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 10px;
+    font-size: 100px;
+    /* aumenta o tamabho dos caracteres que estão no botão - cód hexagonal dos icones/emojis*/
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#rock {
+    background-color: #a200ff;
+}
+
+#paper {
+    background-color: #9ee01a;
+}
+
+#scissors {
+    background-color: #7dbeed;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.your-score span {
+    color: rgb(58, 93, 207);
+}
+
+.machine-score span {
+    color: rgb(221, 93, 43);
+
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        padding: 35px;
+        
+        
+    }
+
+    .buttons {
+        margin: 10px 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 80px;
+        /* aumenta o tamabho dos caracteres que estão no botão - cód hexagonal dos icones/emojis*/
+            
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 8px;
+        
+    }
+
+    .buttons {
+        margin: 5px 0;
+        display: flex;
+        gap: 5px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 60px;
+        /* aumenta o tamabho dos caracteres que estão no botão - cód hexagonal dos icones/emojis*/
+            
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+}

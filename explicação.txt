@@ -1,0 +1,39 @@
+Explicação da lógica de programação do código. passo a passo:
+
+1. **Definição de Opções:**
+   - Inicialmente, criamos um array chamado `opcoes` com três opções: "rock", "paper" e "scissors".
+
+2. **Escolha Aleatória da Máquina:**
+   - Criamos a função `escolhaAleatoria` que gera uma escolha aleatória para a "Alexa" a partir das opções disponíveis.
+   - Isso é feito gerando um índice aleatório no array `opcoes` e retornando a escolha correspondente.
+
+3. **Verificação do Resultado:**
+   - A função `verificarResultado` compara a escolha do jogador com a escolha da "Alexa" para determinar o resultado do jogo.
+   - Se as escolhas forem iguais, é um empate.
+   - Se o jogador ganhar (comparando pedra, papel, tesoura), o jogador vence.
+   - Se não for empate nem vitória do jogador, a "Alexa" ganha.
+
+4. **Exibição de Emojis:**
+   - Criamos um objeto `emojis` que mapeia as escolhas para emojis correspondentes para tornar a exibição mais amigável.
+   - Usamos esses emojis para mostrar as escolhas do jogador e da "Alexa" na tela.
+
+5. **Função Principal - Jogar JoKenPô:**
+   - A função `jogarJokempo` é a principal. Ela é chamada quando o jogador clica em um dos botões de escolha ("rock", "paper" ou "scissors").
+   - Ela gera a escolha da "Alexa", destaca visualmente as escolhas na tela e chama a função `verificarResultado` para determinar o resultado.
+
+6. **Remoção de Classes Ativas:**
+   - Antes de destacar visualmente as escolhas, removemos qualquer classe "active" de todos os botões de escolha para garantir que apenas a escolha atual seja destacada.
+
+7. **Adição de Classe Ativa:**
+   - Adicionamos a classe "active" aos ícones de escolha do jogador e da "Alexa" para destacar visualmente as escolhas.
+
+8. **Exibição do Resultado:**
+   - A função `verificarResultado` exibe o resultado do jogo, atualizando o parágrafo com a classe "result" para mostrar quem ganhou ou se foi um empate.
+
+9. **Atualização de Pontuações:**
+   - Dependendo do resultado, as pontuações do jogador e da "Alexa" são atualizadas e exibidas na tela.
+
+10. **Event Listeners:**
+    - Adicionamos um evento de clique para cada botão de escolha para que a função `jogarJokempo` seja chamada quando o jogador clicar em um dos botões.
+    - Isso permite que o jogo seja interativo, e a escolha do jogador seja processada quando ele clica em uma das opções.
+
